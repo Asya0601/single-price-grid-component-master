@@ -1,0 +1,260 @@
+@font-face {
+    font-family: 'Karla';
+    src: url(fonts/Karla-VariableFont_wght.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url(fonts/Karla-VariableFont_wght.ttf);
+    font-weight: 700;
+}
+
+/* Reset settings */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-overflow: balance;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Variables area */
+
+:root{
+    --cyan: hsl(179, 62%, 43%);
+    --cyanLight:hsl(179, 51%, 53%);
+    --brightYellow: hsl(71, 73%, 54%);
+    --brightYellowActive :hsl(71, 73%, 71%);
+    --lightGray: hsl(204, 43%, 93%);
+    --grayishBlue: hsl(218, 22%, 67%);
+}
+
+/* Global styling area */
+
+html{
+    font-family: 'Karla';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+h1{
+    font-size: 1.3rem;
+    font-weight: 700;
+
+    color: white;
+}
+
+p{
+    font-size: 0.9rem;
+
+    line-height: 1.5rem;
+}
+
+li{
+    line-height: 1.5rem;
+}
+
+button{
+    background-color: var(--brightYellow);
+
+    color: white;
+
+    width: 100%;
+
+    padding-block: 1rem;
+
+    border: none;
+    border-radius: 0.3rem;
+
+    box-shadow: 0px 13px 36px 0px rgba(62,66,66,0.28);
+}
+
+button:active{
+    background-color: var(--brightYellowActive);
+}
+
+
+/* Local styling area */
+body{
+    background-color: var(--lightGray);
+}
+
+.main{
+    width: 85%;
+    margin-inline: auto;
+    margin-block: 30%;
+}
+
+.main_section, .main_section_div{
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.3rem;
+}
+
+.main_section{
+    background-color: white;
+}
+
+.main_section_h1{
+    color: var(--cyan);
+}
+
+.main_section_p{
+    color: var(--grayishBlue);
+}
+
+.main_section_p_span{
+    color: var(--brightYellow);
+
+    font-weight: 700;
+}
+
+.main_section_div:nth-of-type(1){
+    background-color: var(--cyan);
+}
+
+.main_section_div:nth-of-type(2){
+    background-color: var(--cyanLight);
+}
+
+.main_section_div p, li{
+    color: var(--lightGray);
+}
+
+.price{
+    font-size: 2rem;
+    font-weight: 700;
+
+    color: white;
+}
+
+.main_section_div_p:nth-of-type(1){
+    color: var(--cyanLight);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.attribution{
+    display: none;
+}
+
+/* Adaptive area */
+
+@media(min-width:500px){
+    .main{
+        width: 60%;
+        margin-inline: auto;
+        margin-block: 20%;
+    }
+}
+
+@media(min-width:700px){
+    .main{
+        width: 50%;
+        margin-inline: auto;
+        margin-block: 20%;
+    }
+}
+
+@media(min-width:900px){
+    .main{
+        width: 40%;
+        margin-inline: auto;
+        margin-block: 15%;
+    }
+}
+
+@media(min-width:1200px){
+    .main{
+        width: 50%;
+        margin-inline: auto;
+        margin-block: 15%;
+    }
+
+    .main_section, .main_section_div{
+        padding: 2.5rem;
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.3rem;
+    }
+
+    .main_div{
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        column-gap: 0;
+        
+        width: 100%;
+    }
+
+    .main_section_div{
+        flex: 1;
+    }
+}
+
+@media(min-width:1400px){
+    .main{
+        width: 45%;
+        margin-inline: auto;
+        margin-block: 12%;
+    }
+
+    .main_section, .main_section_div{
+        padding: 2.5rem;
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.3rem;
+    }
+
+    .main_div{
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        column-gap: 0;
+        
+        width: 100%;
+    }
+
+    .main_section_div{
+        flex: 1;
+    }
+}
+
+@media(min-width:1600px){
+    .main{
+        width: 40%;
+        margin-inline: auto;
+        margin-block: 10%;
+    }
+
+    .main_section, .main_section_div{
+        padding: 2.5rem;
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.3rem;
+    }
+
+    .main_div{
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        column-gap: 0;
+        
+        width: 100%;
+    }
+
+    .main_section_div{
+        flex: 1;
+    }
+}
