@@ -86,6 +86,8 @@ body{
     width: 85%;
     margin-inline: auto;
     margin-block: 30%;
+
+    box-shadow: 0px 10px 39px 10px rgba(62,66,66,0.17);
 }
 
 .main_section, .main_section_div{
