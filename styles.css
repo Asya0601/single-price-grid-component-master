@@ -108,11 +108,14 @@ body{
 
 .main_section_p{
     color: var(--grayishBlue);
+
+    width: 95%;
 }
 
 .main_section_p_span{
     color: var(--brightYellow);
 
+    font-size: 1.1rem;
     font-weight: 700;
 }
 
